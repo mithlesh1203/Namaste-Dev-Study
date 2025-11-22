@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [loggedIn, setLoggedIn] = useState(false);
 
@@ -18,19 +19,19 @@ const Header = () => {
           style={{ marginLeft: "auto", display: "flex", alignItems: "center" }}
         >
           <li style={{ marginRight: "20px" }}>
-            <a href="/home">Namaste Dev</a>
+            <Link to="/home">Namaste Dev</Link>
           </li>
           <li style={{ marginRight: "20px" }}>
-            <a href="/body">Home</a>
+            <Link to="/body">Home</Link>
           </li>
           <li style={{ marginRight: "20px" }}>
-            <a href="/about">About Us</a>
+            <Link to="/about">About Us</Link>
           </li>
           <li style={{ marginRight: "20px" }}>
-            <a href="/contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
           <li style={{ marginRight: "20px" }}>
-            <a href="/cart">Cart</a>
+            <Link to="/cart">Cart</Link>
           </li>
           <button
             style={{ marginRight: "20px" }}
